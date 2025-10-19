@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File: res/drawable/splash_icon_custom.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/sportify_black" />
+    <item
+        android:drawable="@drawable/sportify_icon_slash"
+        android:width="180dp"
+        android:height="180dp"
+        android:gravity="center" />
+</layer-list>
