@@ -47,8 +47,9 @@
     </LinearLayout>
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:layout_width="350dp"
-        android:layout_height="350dp"
+        android:id="@+id/songImgPA"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_margin="10dp"
         android:src="@drawable/sportify_icon_playstore"
         app:shapeAppearanceOverlay="@style/curved"
@@ -56,6 +57,7 @@
         app:strokeWidth="5dp"/>
 
     <TextView
+        android:id="@+id/songNamePA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -74,12 +76,14 @@
         android:layout_weight="1">
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/previousBtnPA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:icon="@drawable/previous_icon"
             app:iconSize="40dp"/>
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/playPauseBtnPA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:icon="@drawable/pause_icon"
@@ -90,6 +94,7 @@
             app:iconTint="@color/white"/>
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/nextBtnPA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:icon="@drawable/next_icon"

@@ -3,14 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="vn.edu.hust.sis.khai225202.musicplayer">
 
-<!--    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"-->
-<!--        tools:ignore="ScopedStorage" />-->
-
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
+        android:name=".ApplicationClass"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -45,6 +41,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".MusicService"
+            android:foregroundServiceType="mediaPlayback"/>
     </application>
 
 </manifest>
